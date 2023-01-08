@@ -34,6 +34,16 @@ function App() {
             What sort of adventure will you embark on?{" "}
           </p>
         </header>
+        <div className={styles.characterWrapper}>
+          <Character
+            body={body}
+            head={head}
+            face={face}
+            accessory={accessory}
+            skinColor={skinColor}
+            clothesColor={clothesColor}
+          />
+        </div>
         <div className={styles.controlColumn}>
           <ControlPane
             title="Bodies"
@@ -73,17 +83,6 @@ function App() {
           />
         </div>
       </MaxWidthWrapper>
-
-      <div className={styles.characterWrapper}>
-        <Character
-          body={body}
-          head={head}
-          face={face}
-          accessory={accessory}
-          skinColor={skinColor}
-          clothesColor={clothesColor}
-        />
-      </div>
     </main>
   );
 }

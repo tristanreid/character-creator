@@ -44,3 +44,30 @@
 .controlColumn {
   width: 50%;
 }
+@media (max-width: 500px) {
+  .characterWrapper {
+    top: 10%;
+    left: 10%;
+    bottom: 5%;
+    position: fixed;
+    min-height: 500px;
+  }
+  .controlColumn {
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+
+.decoration {
+  display: none;
+ }
+
+  header {
+    display: none;
+  }
+  
+  footer {
+    display: none;
+  }
+}
